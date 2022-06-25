@@ -116,7 +116,7 @@ label:hover > div {
 }
 
 .nav_btns {
-  width: 400px;
+  max-width: 300px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -516,6 +516,7 @@ footer {
 
   .nav_btns {
     cursor: pointer;
+    display: none;
   }
 
   .container ul {
@@ -523,6 +524,16 @@ footer {
     justify-content: space-between;
     align-items: center;
     color: black;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .nav_btns {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0px;
   }
 }
 
@@ -662,7 +673,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 30px;
+    margin-right: 0px;
+    display: none;
   }
 
   .btn_home {
