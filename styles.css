@@ -16,10 +16,9 @@ body {
 nav {
   background-color: rgb(243, 243, 243);
   width: 100vw;
-  
-  position: fixed;
-} 
 
+  position: fixed;
+}
 
 .container {
   position: fixed;
@@ -116,7 +115,7 @@ label:hover > div {
   margin-top: -20px;
 }
 
-.nav_btns{
+.nav_btns {
   width: 400px;
   display: flex;
   flex-direction: row;
@@ -126,7 +125,7 @@ label:hover > div {
   cursor: pointer;
 }
 
-.btn_home{
+.btn_home {
   cursor: pointer;
   font-size: 20px;
   font-weight: 700;
@@ -134,19 +133,19 @@ label:hover > div {
   border: none;
   width: 170px;
   height: 40px;
-  border-radius: 30px;;
+  border-radius: 30px;
 }
 
- .btn_home:hover{
-  background-color: red;
+.btn_home:hover {
+  background-color: #d8ac1d;
 }
 
-.btn_register{
+.btn_register {
   color: white;
   cursor: pointer;
   font-size: 20px;
   font-weight: 700;
-  background-color: red;
+  background-color: rgb(38, 93, 241);
   border: none;
   width: 170px;
   height: 40px;
@@ -330,7 +329,6 @@ label:hover > div {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  tt
 }
 
 .stat_info span {
@@ -450,8 +448,6 @@ label:hover > div {
 footer {
   background-color: rgb(243, 243, 243);
   color: grey;
-
-  position: ;
   bottom: 0 auto;
   width: 100%;
 }
@@ -481,7 +477,6 @@ footer {
 
   .hero_info_desc {
     width: 400px;
-    text-align: ;
   }
 
   .hero_info_cont {
@@ -564,19 +559,19 @@ footer {
     display: flex;
   }
 
-  h3{
+  h3 {
     font-size: 1.5rem;
   }
 
-  .nosotros p{
+  .nosotros p {
     margin-top: 10px;
   }
 
-  .nosotros h3{
+  .nosotros h3 {
     margin-top: 10px;
   }
 
-  .subjectlist{
+  .subjectlist {
     width: 1200px;
     display: flex;
     flex-direction: row;
@@ -586,23 +581,23 @@ footer {
     margin-top: 20px;
   }
 
-  .subject{
+  .subject {
     width: 220px;
     height: 220px;
   }
 
-  .marketing_cardlist{
+  .marketing_cardlist {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
 }
 
-@media screen and (min-width: 1000px){
-  label{
+@media screen and (min-width: 1000px) {
+  label {
     display: none;
   }
-  nav{
+  nav {
     width: 100vw;
     height: 70px;
     display: flex;
@@ -611,7 +606,7 @@ footer {
     align-items: center;
   }
 
-  .nav_btns{
+  .nav_btns {
     display: block;
     display: flex;
     justify-content: center;
@@ -619,12 +614,12 @@ footer {
     margin-right: 30px;
   }
 
-  .btn_home{
+  .btn_home {
     margin-right: 10px;
   }
 
   .container {
-    height:70px;
+    height: 70px;
     width: 1500px;
     display: flex;
     align-items: center;
@@ -638,22 +633,21 @@ footer {
     margin-right: 20px;
     cursor: pointer;
     opacity: 1;
-}
+  }
 
-  .container ul a{
+  .container ul a {
     cursor: pointer;
   }
 
-  .nav_btns{
+  .nav_btns {
     cursor: pointer;
   }
 
-  .container ul{
+  .container ul {
     margin-right: 350px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: black;
   }
-  
 }
