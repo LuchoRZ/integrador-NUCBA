@@ -16,16 +16,16 @@ body {
 nav {
   background-color: rgb(243, 243, 243);
   width: 100vw;
-
   position: fixed;
+  top: 0;
 }
 
 .container {
   position: fixed;
   top: 0;
   right: 0;
-  height: 30vh;
-  width: 75px;
+  height: 600vh;
+  width: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -38,6 +38,7 @@ nav .logo {
 }
 
 .container ul li {
+  padding: 10px;
   list-style: none;
   color: #ddc9e9;
   font-size: 50px;
@@ -89,7 +90,7 @@ label:hover > div {
 }
 
 #toggle-nav:checked ~ .container {
-  height: 100vh;
+  height: 110vh;
   width: 275px;
   right: 0px;
   background: rgb(38, 93, 241);
@@ -116,7 +117,7 @@ label:hover > div {
 }
 
 .nav_btns {
-  max-width: 300px;
+  width: 300px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -150,6 +151,7 @@ label:hover > div {
   width: 170px;
   height: 40px;
   border-radius: 30px;
+  margin-right: 30px;
 }
 
 .btn_register:hover {
@@ -157,7 +159,7 @@ label:hover > div {
 }
 
 .main {
-  width: 100vw;
+  max-width: 2200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -264,11 +266,11 @@ label:hover > div {
 }
 
 .hero_img_1 img {
-  width: 210px;
+  width: 200px;
 }
 
 .hero_img_2 img {
-  width: 210px;
+  width: 200px;
 }
 
 .about {

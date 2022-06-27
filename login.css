@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: black;
+  font-family: "Raleway", "sans-serif";
+  border: solid red 1px;
+}
+
+body {
+  height: 100vh;
+  background-color: rgb(243, 243, 243);
+}
+
+nav {
+  background-color: rgb(243, 243, 243);
+  width: 100vw;
+  position: fixed;
+}
+
+.container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 600vh;
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+}
+
+nav .logo {
+  font-size: 30px;
+  padding: 10px;
+}
+
+.container ul li {
+  padding: 10px;
+  list-style: none;
+  color: #ddc9e9;
+  font-size: 50px;
+  font-family: sans-serif;
+  cursor: pointer;
+  padding-bottom: 5px;
+  transform: translat(500px);
+  transition: transform 0.6s ease;
+  opacity: 0;
+}
+
+.container ul a {
+  cursor: default;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.container ul li {
+  cursor: default;
+}
+
+.container ul a:hover {
+  color: #f7cb3e;
+}
+
+input {
+  display: none;
+}
+
+label {
+  z-index: 99;
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+label > div {
+  height: 5px;
+  width: 35px;
+  background: #f7cb3e;
+  margin: 5px;
+  transition: transform 0.5s;
+}
+
+label:hover > div {
+  background: #d8ac1d;
+}
+
+#toggle-nav:checked ~ .container {
+  height: 110vh;
+  width: 275px;
+  right: 0px;
+  background: rgb(38, 93, 241);
+  z-index: 1;
+}
+
+#toggle-nav:checked ~ .container ul li {
+  transform: translateY(00px);
+  opacity: 1;
+}
+
+#toggle-nav:checked ~ label > div:nth-child(1) {
+  transform: rotate(45deg);
+  margin-top: 18px;
+}
+
+#toggle-nav:checked ~ label > div:nth-child(2) {
+  opacity: 0;
+}
+
+#toggle-nav:checked ~ label > div:nth-child(3) {
+  transform: rotate(-45deg);
+  margin-top: -20px;
+}
+
+.nav_btns {
+  max-width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  display: none;
+}
+
+.btn_home {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: #f7cb3e;
+  border: none;
+  width: 170px;
+  height: 40px;
+  border-radius: 30px;
+}
+
+.btn_home:hover {
+  background-color: #d8ac1d;
+}
+
+.btn_register {
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: rgb(38, 93, 241);
+  border: none;
+  width: 170px;
+  height: 40px;
+  border-radius: 30px;
+}
+
+.btn_register:hover {
+  background-color: rgb(13, 50, 153);
+}
+
+.login {
+  width: 500px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login_content {
+  width: 300px;
+  display: flex;
+  flex-direction: center;
+}
+
+.input-cont {
+  width: 200px;
+  height: 300px;
+}
